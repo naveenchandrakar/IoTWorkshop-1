@@ -19,9 +19,16 @@ This will be a repository of all the sample programs I use for the IoT workshop
 # Installing the library for Blynk Support
 
 1. Open you IDE and click on "Sketch -> Include library -> Manage Libraries".
-3. In the Library Manager, search for Blynk.
-4. Click on it and install. 
-5. Restart your Arduino IDE for the changes to take effect. 
+2. In the Library Manager, search for Blynk.
+3. Click on it and install. 
+4. Restart your Arduino IDE for the changes to take effect. 
+
+# Installing the library for BMP180 Temperature Pressure senssor for Weather Monitoring System Project
+
+1. Open you IDE and click on "Sketch -> Include library -> Manage Libraries".
+2. In the Library Manager, search for BMP180.
+3. Click on the first link "Adafruit-BMP085-Library" and install. 
+4. Restart your Arduino IDE for the changes to take effect. 
 
 # Programming the device
 
