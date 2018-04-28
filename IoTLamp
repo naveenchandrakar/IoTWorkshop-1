@@ -20,7 +20,7 @@ char pass[] = "password";
 
 void setup()
 {
-  digitalWrite(D1,HIGH);  //use this for low level triggered relay module
+  //digitalWrite(D1,HIGH);  //use this for low level triggered relay module
   Blynk.begin(auth, ssid, pass);
 }
 
