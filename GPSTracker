@@ -1,4 +1,6 @@
-#GPSTracker
+/*
+# GPSTracker
+*/
 
 #define BLYNK_PRINT Serial
 #include <TinyGPS++.h>
@@ -8,9 +10,9 @@
 /*
    This sample sketch demonstrates the normal use of a TinyGPS++ (TinyGPSPlus) object.
    It requires the use of SoftwareSerial, and assumes that you have a
-   4800-baud serial GPS device hooked up on pins 4(rx) and 3(tx).
+   9600-baud serial GPS device hooked up on pins D7(rx) and D8(tx).
 */
-static const int RXPin = 13, TXPin = 15;
+static const int RXPin = 13, TXPin = 15; //D7,D8
 static const uint32_t GPSBaud = 9600;
 char auth[] = "33ubbjj53b6lm85ee764jbjb619b3e4f28495e7239dyfhf";  //GPS Logger
 
