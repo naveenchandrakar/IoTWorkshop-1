@@ -30,17 +30,32 @@ This will be a repository of all the sample programs I use for the IoT workshop
 3. Click on the first link "Adafruit-BMP085-Library" and install. 
 4. Restart your Arduino IDE for the changes to take effect. 
 
-# Programming the device
+# Installing the library for Neo 6M for GPS Tracker System Project
+
+1. Go to the link http://arduiniana.org/libraries/tinygpsplus/ 
+2. Click on the download now button and download the zip file.
+3. Extract the zip/rar file in a folder and rename that folder as "TinyGPSPlus".
+4. Copy and Paste this folder in to the Libraries folder where the arduino program file is located in the Programs Folder.
+4. Restart your Arduino IDE for the changes to take effect. 
+
+# Programming the device (For Wemos D1 Mini / D1 R1 Mini)
 
 1. Connect the device.
 2. Open Arduino IDE
-3. Go to "Tools -> Board -> Select teh board which you're using".
+3. Go to "Tools -> Board -> Wemos D1 R1".
 4. Select "Flash size -> 4M (1M SPIFFS)"
 5. CPU Frequency -> "80 MHz"
 6. Upload Speed -> "115200"
 7. Select the COM Port which appears on the list "COMX"
 
-
+# Programming the device (For Node MCU)
+1. Connect the device.
+2. Open Arduino IDE
+3. Go to "Tools -> Board -> Node MCU 1.0".
+4. Select "Flash size -> 4M (1M SPIFFS)"
+5. CPU Frequency -> "80 MHz"
+6. Upload Speed -> "9600"
+7. Select the COM Port which appears on the list "COMX"
 
 
 
