@@ -1,0 +1,31 @@
+int sensor_pin = 0; // A0 Pin in the Node MCU and Wemos D1 Mini. (connected to sensor)
+int value = 0;
+int relay_pin = 5; //  D1 Pin in the Node MCU and Wemos D1 Mini. (connected to motor)
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(relay_pin, OUTPUT);
+  Serial.println("Reading");
+  delay(500);
+}
+ 
+void loop()
+{
+  value= analogRead(sensor_pin);
+  value = map(value,1024,0,0,100);
+  Serial.print("Moisture Level : ");
+  Serial.print(value);
+  Serial.println("%");
+    if (value<50)
+    {
+      digitalWrite(relay_pin, HIGH);
+      Serial.println("relay on");
+    }
+    else 
+    {
+     digitalWrite(relay_pin, LOW);
+     Serial.println("relay off");
+    }   
+  delay(500);
+}
